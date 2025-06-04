@@ -7,7 +7,6 @@ class FizzBuzzTest {
 
     @Test
     void shouldReturnTheFirstNumber() {
-
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("1", fizzBuzz.fizzBuzzLine(1));
     }
@@ -31,9 +30,21 @@ class FizzBuzzTest {
     }
 
     @Test
+    void shouldReturnTheSecondBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzBuzz.fizzBuzzLine(10));
+    }
+
+    @Test
     void shouldReturnTheSecondFizz() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Fizz", fizzBuzz.fizzBuzzLine(6));
+    }
+
+    @Test
+    void shouldReturnFizzBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("FizzBuzz", fizzBuzz.fizzBuzzLine(15));
     }
 
     /*
