@@ -24,6 +24,18 @@ class FizzBuzzTest {
         assertEquals("Fizz", fizzBuzz.fizzBuzzLine(3));
     }
 
+    @Test
+    void shouldReturnTheFirstBuzz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Buzz", fizzBuzz.fizzBuzzLine(5));
+    }
+
+    @Test
+    void shouldReturnTheSecondFizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Fizz", fizzBuzz.fizzBuzzLine(6));
+    }
+
     /*
     I want to return Fizz for number 3
     And then return Buzz for number 5
